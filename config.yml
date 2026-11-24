@@ -16,7 +16,7 @@ department: "Data Science Institute"
 tagline: "Clinical AI governance · Assess-AI"
 
 # Square photo in assets/ (JPEG or PNG, ~600x600). Leave "" to show initials.
-photo: ""
+photo: "photo.jpg"
 
 accent: "#0b4f8a"                # header + button colour
 

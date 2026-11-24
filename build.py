@@ -91,7 +91,9 @@ if note:
     v.append(f"NOTE:{vesc(note)}")
 if photo_path:
     kind = "PNG" if photo_path.suffix.lower() == ".png" else "JPEG"
-    v.append(f"PHOTO;ENCODING=b;TYPE={kind}:" + base64.b64encode(photo_path.read_bytes()).decode())
+    small = photo_path.with_name(photo_path.stem + "-small" + photo_path.suffix)
+    src = small if small.exists() else photo_path
+    v.append(f"PHOTO;ENCODING=b;TYPE={kind}:" + base64.b64encode(src.read_bytes()).decode())
 v.append("END:VCARD")
 (DIST / "contact.vcf").write_bytes(("\r\n".join(fold(x) for x in v) + "\r\n").encode())
 
