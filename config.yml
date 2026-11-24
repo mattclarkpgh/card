@@ -1,0 +1,42 @@
+# ─────────────────────────────────────────────────────────────
+#  Edit this file, commit, and GitHub Actions rebuilds the site.
+#  Anything left blank ("") is simply hidden on the card.
+# ─────────────────────────────────────────────────────────────
+
+# Public address of the card. The QR codes point here, so set this
+# BEFORE you print anything. With a custom domain, use that instead.
+site_url: "https://mattclarkpgh.github.io/card/"
+
+first_name: "Matt"
+last_name: "Clark"
+pronouns: "he/him"
+title: "Principal Product Manager"
+organization: "American College of Radiology"
+department: "Data Science Institute"
+tagline: "Clinical AI governance · Assess-AI"
+
+# Square photo in assets/ (JPEG or PNG, ~600x600). Leave "" to show initials.
+photo: ""
+
+accent: "#0b4f8a"                # header + button colour
+
+email: "mclark@acr.org"
+phone: "(412) 334-6679"         # shown with Call + Text buttons
+website: "https://www.acrdsi.org"
+location: "Remote · USA"
+
+# Booking link (Calendly, Microsoft Bookings, etc.). "" to hide.
+meeting_link: ""
+
+# Small banner at the top of the card. "" to hide.
+event_note: "At RSNA 2026 — let's connect"
+
+# Added to the NOTE field of the saved contact, so people remember
+# where they met you.
+contact_note: "Met at RSNA 2026"
+
+links:
+  - label: "LinkedIn"
+    url: "https://www.linkedin.com/in/matthewfclark"
+  # - label: "Assess-AI"
+  #   url: "https://..."
